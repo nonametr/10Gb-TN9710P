@@ -1,5 +1,7 @@
 #!/bin/python3
 
+#does same as mvidtoh.sh but in python and without params. change line 47 to use other hdr file
+
 def read_binary_file_to_c_header(file_name):
     try:
         with open(file_name, 'rb') as file:

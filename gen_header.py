@@ -10,7 +10,7 @@ def read_binary_file_to_c_header(file_name):
         for i in range(0, len(data), 2):
             value = data[i:i+2]
             if len(value) == 2:
-                hex_value = '0x{:02x}{:02x}'.format(value[1], value[0])
+                hex_value = '0x{:02x}{:02x}'.format(value[0], value[1])
             else:
                 hex_value = '0x{:02x}00'.format(value[0])
             hex_data.append(hex_value)
